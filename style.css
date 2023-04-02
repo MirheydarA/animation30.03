@@ -1,0 +1,159 @@
+* {
+  padding: 0%;
+  margin: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.sun{
+    background-color: yellow;
+    border-radius: 50%;
+    height: 190px;
+    width: 190px;
+    box-shadow: 0 0 100px yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -90px;
+    margin-left: -90px;
+}
+.border{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 20px solid rgba(246, 231, 23, 0.723);
+    position: absolute;
+    top: -10px;
+    left:-10px;
+    animation-name: scale;
+    animation-iteration-count: infinite;
+    animation-duration: 2s ;
+    animation-timing-function: linear;
+}
+@keyframes scale { 
+
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.05);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    75%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.mercury{
+    background-color: brown;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px brown;
+    margin-top: 70px;
+}
+.mercury-orbit{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid rgba(247, 246, 244, 0.723);
+    animation: rotate 5s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -150px;
+    margin-left: -145px;
+}
+.venus{
+    background-color: rgb(0, 117, 29);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgb(0, 117, 29);
+    margin-top:80px;
+}
+.venus-orbit{
+    height: 390px;
+    width: 390px;
+    border-radius: 50%;
+    border: 2px solid rgba(247, 246, 244, 0.723);
+    animation: rotate 5s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -190px;
+    margin-left: -188px;
+    animation: rotate 5s linear infinite;
+}
+.earth{
+    background-color: rgb(33, 49, 154);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgb(33, 49, 154);
+    margin-top: 110px;
+}
+.earth-orbit{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 2px solid rgba(247, 246, 244, 0.723);
+    animation: rotate 5s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -245px;
+    margin-left: -240px;
+    animation: rotate 5s linear infinite;
+}
+.mars{
+    background-color: rgb(85, 14, 123);
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgb(85, 14, 123);
+    margin-top: 110px;
+}
+.mars-orbit{
+    height: 630px;
+    width: 630px;
+    border-radius: 50%;
+    border: 2px solid rgba(247, 246, 244, 0.723);
+    animation: rotate 5s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -305px;
+    margin-left: -300px;
+    animation: rotate 5s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
